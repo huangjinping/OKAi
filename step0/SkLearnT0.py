@@ -1,5 +1,6 @@
 import jieba
 import sklearn.datasets as sk_datasets
+from graphviz import Digraph
 from sklearn.datasets import load_iris
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
@@ -20,24 +21,29 @@ class SkLearnT0:
 
     def onStart(self):
         # print("SkLearnT0 onStart")
-        # self.loadDataSource()
+        self.loadDataSource()
         # self.mapParse()
         # self.oneHot()
         # self.oneHot1()
         # self.countvec()
         # self.countvec2()
         # self.onPCA()
-        self.onBinarizer()
+        # self.onBinarizer()
 
     def loadDataSource(self):
         # https://mp.weixin.qq.com/s/O7de418oNvCM3z4776s3CQ
         # sklearn中的IRIS（鸢尾花）数据集[1]来对特征处理功能进行说明
         iris = sk_datasets.load_iris()
+        # print(iris)
+        for keys in iris:
+            print(keys)
         # 特征矩阵
         iris_X = iris.data
+        print("Target names: {}".format(iris['target_names']))
+
         # 目标向量
         iris_Y = iris.target
-        print(iris_X)
+        # print(iris_X)
         print(iris_Y)
         # print(dir(load_iris()))
 
@@ -45,16 +51,15 @@ class SkLearnT0:
 
     def mapParse(self):
         print("sparse矩阵 节约内存，方便读取处理")
-
         dict = DictVectorizer(sparse=False)
         data = dict.fit_transform(
             [{'city': '北京', 'temperature': 100}, {'city': '上海', 'temperature': 60}, {'city': '河南', 'temperature': 30}])
         print(dict.get_feature_names_out())
         print(data)
 
+
     def oneHot(self):
         # https://cloud.tencent.com/developer/article/1688022
-
         print("one Hot")
         enc = preprocessing.OneHotEncoder()
         enc.fit([[0, 0, 3], [1, 1, 0], [0, 2, 1], [1, 0, 2]])
@@ -84,10 +89,10 @@ class SkLearnT0:
         strs1 = jieba.cut("女主播周淑怡翻车")
         c1 = " ".join(strs1)
         print()
-        strs2 = jieba.cut("男主播李佳琪翻车")
+        strs2 = jieba.cut("男主播李佳琪翻车，翻车了吗")
         c2 = " ".join(strs2)
         print()
-        data = transfer.fit_transform(["life is short,i like like python", "life is too long,i dislike python"])
+        # data = transfer.fit_transform(["life is short,i like like python", "life is too long,i dislike python"])
 
         data = transfer.fit_transform([c1, c2])
         """
@@ -98,6 +103,8 @@ class SkLearnT0:
         # 1.统计所有文章中所有的词，重复的只看做一次词的列表
         print("返回特征名称：\n", transfer.get_feature_names_out())
         # 2.对每篇文章，在词的列表里面进行统计每个词出现的次数
+        print("文本特征抽取的结果 sparse：\n", data)
+        print("\n")
         print("文本特征抽取的结果：\n", data.toarray())
 
     def countvec2(self):
