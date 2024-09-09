@@ -1,4 +1,5 @@
 import jieba
+import numpy as np
 import sklearn.datasets as sk_datasets
 from graphviz import Digraph
 from sklearn.datasets import load_iris
@@ -7,8 +8,21 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import Binarizer
 from sklearn.preprocessing import Normalizer
+import seaborn as sns;
+
+sns.set(color_codes=True)
 
 from sklearn import preprocessing
+from pylab import mpl
+
+import matplotlib
+
+# https://blog.csdn.net/qq_51763547/article/details/126918669   matplotlib bug
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+
+import pandas as pd
+import seaborn as sns
 
 """
 https://mp.weixin.qq.com/s?__biz=MjM5NzEyMzg4MA==&mid=2649428430&idx=1&sn=e09951adad1b302880958a7705f2b851&chksm=bec1738989b6fa9f42e2c4004b723c04e0521852a43ca90fcdd0372d9b734437e96502a40503&scene=27
@@ -21,8 +35,9 @@ class SkLearnT0:
 
     def onStart(self):
         # print("SkLearnT0 onStart")
-        self.loadDataSource()
-        # self.mapParse()
+        # self.loadDataSource()
+        # self.loadDataSourceView()
+        self.mapParse()
         # self.oneHot()
         # self.oneHot1()
         # self.countvec()
@@ -34,7 +49,9 @@ class SkLearnT0:
         # https://mp.weixin.qq.com/s/O7de418oNvCM3z4776s3CQ
         # sklearn中的IRIS（鸢尾花）数据集[1]来对特征处理功能进行说明
         iris = sk_datasets.load_iris()
-        # print(iris)
+        print(type(iris))
+        print(iris)
+        print("----------------------")
         for keys in iris:
             print(keys)
         # 特征矩阵
@@ -46,8 +63,30 @@ class SkLearnT0:
         # print(iris_X)
         print(iris_Y)
         # print(dir(load_iris()))
-
         # print(load_iris().DESCR)
+
+    def loadDataSourceView(self):
+        # https://blog.csdn.net/qq_43874317/article/details/128185255  鸢尾花数据源可视化
+
+        # mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 设置显示中文字体
+        # mpl.rcParams["axes.unicode_minus"] = False  # 设置正常显示符号
+        # 数据集获取
+        iris = load_iris()  # 小数据集获取
+        # 数据可视化，将数据转换成dataframe的格式存储
+        iris_data = pd.DataFrame(data=iris.data, columns=['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width'])
+        iris_data['target'] = iris.target  # 新增target目标值一列
+        print(iris_data)
+        self.plot_iris(iris_data, col1='Sepal_Width', col2="Petal_Length")
+
+    def plot_iris(self, iris_data, col1, col2):
+        print("---------start0------")
+        print(iris_data)
+        print("---------start1------")
+        # sns.lmplot(x=col1, y=col2, data=iris_data, hue="target", fit_reg=False)  # fit_reg为是否进行线性拟合
+        # plt.xlabel(col1)
+        # plt.ylabel(col2)
+        # plt.title('test')
+        # plt.show()
 
     def mapParse(self):
         print("sparse矩阵 节约内存，方便读取处理")
@@ -56,7 +95,6 @@ class SkLearnT0:
             [{'city': '北京', 'temperature': 100}, {'city': '上海', 'temperature': 60}, {'city': '河南', 'temperature': 30}])
         print(dict.get_feature_names_out())
         print(data)
-
 
     def oneHot(self):
         # https://cloud.tencent.com/developer/article/1688022

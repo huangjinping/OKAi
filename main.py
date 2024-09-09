@@ -2,20 +2,27 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from res.step1.TensorT0 import TensorT0
 from step0.DecisionTree import DecisionTree
+from step0.SeabornT0 import SeabornT0
 from step0.SkLearnT0 import SkLearnT0
 from step0.SkLearnT1 import SkLearnT1
 
 
 def print_hi(name):
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-    learn = SkLearnT0()
-    learn.onStart()
+    # learn = SkLearnT0()
+    # learn.onStart()
     # learn1 = SkLearnT1()
     # learn1.onStart()
     # Use a breakpoint in the code line below to debug your script.
     # tree = DecisionTree()
     # tree.onStart()
+
+    # seabornT0 = SeabornT0()
+    # seabornT0.onStart()
+    tensor = TensorT0()
+    tensor.onStart()
 
 
 # Press the green button in the gutter to run the script.
