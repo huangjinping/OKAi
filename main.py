@@ -19,10 +19,10 @@ def print_hi(name):
     # tree = DecisionTree()
     # tree.onStart()
 
-    # seabornT0 = SeabornT0()
-    # seabornT0.onStart()
-    tensor = TensorT0()
-    tensor.onStart()
+    seabornT0 = SeabornT0()
+    seabornT0.onStart()
+    # tensor = TensorT0()
+    # tensor.onStart()
 
 
 # Press the green button in the gutter to run the script.

@@ -5,6 +5,8 @@ import numpy as np
 import numpy as np
 import pandas as pd
 from scipy import stats
+import  matplotlib
+matplotlib.use("macosx")
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.datasets import load_iris
@@ -19,7 +21,9 @@ class SeabornT0:
     def onStart(self):
         print("---onStart---")
         # self.onDraw()
-        self.onDrawIris()
+        # self.onDrawIris()
+        # self.onDrawIris()
+        self.plot_draw_kline()
 
     def onDraw(self):
         print("onDraw")
@@ -38,7 +42,7 @@ class SeabornT0:
         iris_data = pd.DataFrame(data=iris.data, columns=['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width'])
         iris_data['target'] = iris.target  # 新增target目标值一列
         print(iris_data)
-        mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 设置显示中文字体
+        # mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 设置显示中文字体
         mpl.rcParams["axes.unicode_minus"] = False  # 设置正常显示符号
         self.plot_iris(iris_data, col1='Sepal_Width', col2="Petal_Length")
 
@@ -51,3 +55,9 @@ class SeabornT0:
         plt.ylabel(col2)
         plt.title('test')
         plt.show()
+
+    def plot_draw_kline(self):
+        x = np.linspace(0.0001, 3, 100)
+        y = x ** x
+        plt.plot(x, y, 'r-', linewidth=3)
+        plt.show(block=True)
