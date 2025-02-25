@@ -16,9 +16,6 @@ class SkLearnT1:
         b = 15
         return a, b
 
-
-
-
     def gaussianNB1(self):
         print("onStart")
 

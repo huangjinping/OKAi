@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f7882e9-757c-4e10-94dc-647d88bd19bc" name="Changes" comment="条">
-      <change afterPath="$PROJECT_DIR$/step0/matplotlib01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step0/matplotlib03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step0/matplotlib04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/191736133051_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/201736133052_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/211736133053_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/21736129117_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/221736133054_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/321736216354_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/331736216355_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/341736216356_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/351736216357_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/361736216358_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/371736216359_.pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/img/381736216361_.pic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step0/SeabornT0.py" beforeDir="false" afterPath="$PROJECT_DIR$/step0/SeabornT0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step0/SkLearnT1.py" beforeDir="false" afterPath="$PROJECT_DIR$/step0/SkLearnT1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,17 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huhuijie/Documents/GitHub/OKAi/res/csv&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/huhuijie/Documents/GitHub/OKAi/doc/img",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/img" />
       <recent name="$PROJECT_DIR$/res/csv" />
     </key>
   </component>
@@ -226,7 +236,10 @@
       <workItem from="1727679727264" duration="152976000" />
       <workItem from="1733452913537" duration="1000" />
       <workItem from="1733452918454" duration="9000" />
-      <workItem from="1735696967250" duration="1396000" />
+      <workItem from="1735696967250" duration="14892000" />
+      <workItem from="1739933480619" duration="637000" />
+      <workItem from="1740450452655" duration="1003000" />
+      <workItem from="1740451617939" duration="1913000" />
     </task>
     <task id="LOCAL-00001" summary="tijiao">
       <created>1709089421962</created>
@@ -242,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1725849395271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="条">
+      <created>1735784659663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735784659663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,12 +285,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="条" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OKAi$SeabornT0.coverage" NAME="SeabornT0 Coverage Results" MODIFIED="1725853073917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
-    <SUITE FILE_PATH="coverage/OKAi$matplotlib04.coverage" NAME="matplotlib04 Coverage Results" MODIFIED="1735783769858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
+    <SUITE FILE_PATH="coverage/OKAi$SeabornT0.coverage" NAME="SeabornT0 Coverage Results" MODIFIED="1740450489157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
+    <SUITE FILE_PATH="coverage/OKAi$matplotlib04.coverage" NAME="matplotlib04 Coverage Results" MODIFIED="1740453011063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
     <SUITE FILE_PATH="coverage/OKAi$TensorT1.coverage" NAME="TensorT1 Coverage Results" MODIFIED="1725757268421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/res/step1" />
     <SUITE FILE_PATH="coverage/OKAi$TensorT0.coverage" NAME="TensorT0 Coverage Results" MODIFIED="1725848287971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/res/step1" />
     <SUITE FILE_PATH="coverage/OKAi$main.coverage" NAME="main Coverage Results" MODIFIED="1725853083012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/OKAi$matplotlib03.coverage" NAME="matplotlib03 Coverage Results" MODIFIED="1735783763829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
-    <SUITE FILE_PATH="coverage/OKAi$matplotlib01.coverage" NAME="matplotlib01 Coverage Results" MODIFIED="1735783756171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
+    <SUITE FILE_PATH="coverage/OKAi$matplotlib03.coverage" NAME="matplotlib03 Coverage Results" MODIFIED="1740450570887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
+    <SUITE FILE_PATH="coverage/OKAi$matplotlib01.coverage" NAME="matplotlib01 Coverage Results" MODIFIED="1740450550835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step0" />
   </component>
 </project>
